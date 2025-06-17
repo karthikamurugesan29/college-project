@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Login Form</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+    }
+
+    /* Login Container */
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Login Header */
+    .login-header h2 {
+      margin: 0 0 20px;
+      font-size: 2em;
+      color: #fff;
+    }
+
+    /* Input Fields */
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+      transition: background 0.3s ease;
+    }
+
+    .input-group input::placeholder {
+      color: #ddd;
+    }
+
+    .input-group input:focus {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Login Button */
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #ff6347;
+      color: #fff;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-button:hover {
+      background: #e5533d;
+    }
+
+    /* Additional Links */
+    .additional-links {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+
+    .additional-links a {
+      color: #ff6347;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .additional-links a:hover {
+      color: #e5533d;
+    }
+
+    /* Social Login */
+    .social-login {
+      margin-top: 30px;
+    }
+
+    .social-login p {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .social-login .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-login .social-icons a {
+      color: #fff;
+      font-size: 1.5em;
+      transition: color 0.3s ease;
+    }
+
+    .social-login .social-icons a:hover {
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <!-- Login Container -->
+  <div class="login-container">
+    <!-- Login Header -->
+    <div class="login-header">
+      <h2>Login</h2>
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <!-- Username Input -->
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit" class="login-button">Login</button>
+    </form>
+
+    <!-- Additional Links -->
+    <div class="additional-links">
+      <a href="#">Forgot Password?</a> | <a href="#">Sign Up</a>
+    </div>
+
+    <!-- Social Login -->
+    <div class="social-login">
+      <p> login with:  </p>
+      <p>Google | Facebook</p>
+      <div class="social-icons">
+        <a href="#" title="Google"><i class="fab fa-google"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
